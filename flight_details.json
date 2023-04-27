@@ -1,0 +1,48 @@
+[
+    {
+    "ID" : 1,
+    "Airline" : "US-Bangla",
+    "Departure": "Dhaka",
+    "Arrival" : "Chattogram",
+    "Departure_date" : "23-05-23",
+    "Return_date" : "27-05-23",
+    "Departure_time":" 6 AM",
+    "Arrival_time" : "7 AM",
+    "Price" : 1000
+    },
+    {
+    "ID" : 2,
+    "Airline" : "American Airlines",
+    "Departure": "Dhaka",
+    "Arrival" : "New York",
+    "Departure_date" : "23-02-23",
+    "Return_date" : "28-02-23",
+    "Departure_time":"5 AM",
+    "Arrival_time" : "12.00 PM",
+    "Price" : 20000
+    },
+    {
+    "ID" : 3,
+    "Airline" : "United Airlines",
+    "Departure": "New York",
+    "Arrival" : "London",
+    "Departure_date" : "23-03-23",
+    "Return_date" : "29-03-23",
+    "Departure_time":"4 AM",
+    "Arrival_time" : "10 AM",
+    "Price" : 2500
+    },
+    {
+    "ID" : 4,
+    "Airline" : "Southwest Airlines",
+    "Departure": "Dhaka",
+    "Arrival" : "Moscow",
+    "Departure_date" : "23-05-23",
+    "Return_date" : "27-05-23",
+    "Departure_time":"6 AM",
+    "Arrival_time" : "5 PM",
+    "Price" : 3000
+    }
+
+
+]

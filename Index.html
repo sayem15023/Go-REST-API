@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Flight Booking</title>
+     <style>
+       * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #888;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.search-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 40%;
+}
+
+.search-box h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #2196f3;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #0c7cd5;
+}
+
+.image-box {
+  width: 50%;
+}
+
+.image-box img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+     </style>
+  </head>
+  <body>
+    <header>
+      <h1>Flight Booking</h1>
+      <nav>
+        <ul>
+          <li><a href="#">One-way</a></li>
+          <li><a href="#">Round-trip</a></li>
+          <li><a href="#">Multi-city</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="search-box">
+        <h2>Book Your Flight</h2>
+        <form>
+          <div class="input-group">
+            <label for="from">From</label>
+            <input type="text" id="from" name="from">
+          </div>
+          <div class="input-group">
+            <label for="to">To</label>
+            <input type="text" id="to" name="to">
+          </div>
+          <div class="input-group">
+            <label for="depart">Depart</label>
+            <input type="date" id="depart" name="depart">
+          </div>
+          <div class="input-group">
+            <label for="return">Return</label>
+            <input type="date" id="return" name="return">
+          </div>
+          <div class="input-group">
+            <label for="passengers">Passengers</label>
+            <select id="passengers" name="passengers">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="class">Class</label>
+            <select id="class" name="class">
+              <option value="economy">Economy</option>
+              <option value="business">Business</option>
+              <option value="first">First</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <input type="submit" value="Search">
+          </div>
+        </form>
+      </div>
+      <div class="image-box">
+        <img src="https://th.bing.com/th/id/R.fb81365b797ac55a6c31a905ada7c372?rik=vc7PriLySSkh9A&riu=http%3a%2f%2fdreamicus.com%2fdata%2fflight%2fflight-06.jpg&ehk=WkKi4iwZHA89GTc7Q1ir26ROubQsZuw4gyAefo6oCp8%3d&risl=&pid=ImgRaw&r=0" alt="Flight image">
+      </div>
+    </main>
+  </body>
+</html>

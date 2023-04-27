@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Select Flight - Flight Booking</title>
+      <style>
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+.flight-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.flight-icon {
+  margin-right: 20px;
+  height:100px;
+  width:100px;
+}
+
+.filter-table {
+  max-width: 800px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+td:first-child {
+  width: 150px;
+}
+
+td:nth-child(2) {
+  width: 150px;
+}
+
+td:nth-child(3) {
+  width: 200px;
+}
+
+td:last-child {
+  width: 100px;
+}
+
+button {
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 3px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #333;
+  color: #f8f8f8;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logo a {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #f8f8f8;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1531265037289-2df29c1b692d');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+      </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">Flight Booking</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Select Your Flight</h1>
+      <div class="flight-filters">
+        <div class="flight-icon">
+          <img src="https://thumbs.dreamstime.com/b/plane-circle-18801364.jpg" style='width:100px;' alt="Flight Icon">
+        </div>
+        <div class="filter-table">
+          <table>
+            <tr>
+              <th>Departure Time</th>
+              <th>Arrival Time</th>
+              <th>Airline</th>
+              <th>Price</th>
+              <th>Select</th>
+            </tr>
+            <tr>
+              <td>09:00 AM</td>
+              <td>12:00 PM</td>
+              <td>American Airlines</td>
+              <td>$150</td>
+              <td><button>Select</button></td>
+            </tr>
+            <tr>
+              <td>02:00 PM</td>
+              <td>05:00 PM</td>
+              <td>United Airlines</td>
+              <td>$200</td>
+              <td><button>Select</button></td>
+            </tr>
+            <tr>
+              <td>06:00 PM</td>
+              <td>09:00 PM</td>
+              <td>Delta Airlines</td>
+              <td>$175</td>
+              <td><button>Select</button></td>
+            </tr>
+            <tr>
+              <td>10:00 PM</td>
+              <td>01:00 AM</td>
+              <td>Southwest Airlines</td>
+              <td>$125</td>
+              <td><button>Select</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

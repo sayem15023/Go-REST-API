@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Confirm Booking - Flight XYZ</title>
+    <style>
+       * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo a {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.flight-details,
+.booking-details,
+.fare-policy,
+.insurance,
+.fare-deals {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.flight-details h2,
+.booking-details h2,
+.fare-policy h2,
+.insurance h2,
+.fare-deals h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.flight-info,
+.passenger-info,
+.fare-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.flight-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.flight-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.flight-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.flight-route {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.flight-date {
+  font-size: 18px;
+  color: #666;
+}
+
+.fare-type {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fare-amount {
+  font-size: 18px;
+}
+
+.insurance-option {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#insurance-option {
+  margin-right: 10px;
+}
+
+.coupon-code {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#coupon-code {
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-right: 10px;
+  width: 100%;
+}
+
+button {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #006666;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">Flight XYZ</a>
+      </div>
+    </header>
+    
+    <main>
+      <h1>Confirm Your Booking</h1>
+      
+      <div class="flight-details">
+        <h2>Flight Details</h2>
+        <div class="flight-info">
+          <div class="flight-icon">
+            <img src="https://thumbs.dreamstime.com/b/plane-circle-18801364.jpg"/>
+          </div>
+          <div class="flight-summary">
+            <div class="flight-name">Flight XYZ</div>
+            <div class="flight-route">New York (JFK) to London (LHR)</div>
+            <div class="flight-date">Departure: May 1, 2023 - Return: May 15, 2023</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="booking-details">
+        <h2>Booking Details</h2>
+        <div class="passenger-info">
+          <div class="passenger-name">John Doe</div>
+          <div class="passenger-email">john.doe@gmail.com</div>
+        </div>
+        <div class="fare-summary">
+          <div class="fare-type">Economy Class</div>
+          <div class="fare-amount">$500</div>
+        </div>
+      </div>
+      
+      <div class="fare-policy">
+        <h2>Fare Policy</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non velit in enim blandit pulvinar. Integer lacinia vel mauris eu faucibus. Fusce aliquet dui vitae ante imperdiet dapibus. Duis rutrum dui vel nunc iaculis, id sagittis sapien molestie. Nunc vel elit tortor.</p>
+      </div>
+      
+      <div class="insurance">
+        <h2>Insurance</h2>
+        <div class="insurance-option">
+          <input type="checkbox" id="insurance-option" name="insurance-option">
+          <label for="insurance-option">Yes, I would like to purchase insurance for an additional $50.</label>
+        </div>
+      </div>
+      
+      <div class="fare-deals">
+        <h2>Fare Deals & Coupons</h2>
+        <div class="coupon-code">
+          <input type="text" id="coupon-code" name="coupon-code" placeholder="Enter coupon code...">
+          <button type="submit">Apply</button>
+        </div>
+      </div>
+      
+      <div class="booking-button">
+        <button type="submit">Confirm Booking</button>
+      </div>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 Flight XYZ. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
